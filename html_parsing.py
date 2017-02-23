@@ -16,6 +16,6 @@ class LinkFinder(HTMLParser):
     def error(self,message):
         pass
 
-finder=LinkFinder('E:/B.E/project material/project_files','index.html')
-finder.feed("index")
+finder=LinkFinder(base_url,page_url)
+finder.feed("<html><head></head></html>")
     
